@@ -2,6 +2,7 @@ import { EMessageActions } from '../enums/state.enums';
 
 export interface IStateAction {
   type: EMessageActions;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload: any; // ToDo: Figure this out.
 }
 
