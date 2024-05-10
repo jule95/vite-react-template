@@ -5,7 +5,7 @@ class ApiService {
 
   constructor(config?: AxiosRequestConfig) {
     this.apiService = new Axios({
-      baseURL: process.env.VITE_API_BASE_URL,
+      baseURL: import.meta.env.VITE_API_BASE_URL,
       headers: {
         'Content-Type': `application/json`,
       },
