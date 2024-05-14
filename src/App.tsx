@@ -1,4 +1,4 @@
-import './App.scss'
+import './App.scss';
 import { useTranslation } from 'react-i18next';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div>{t(`hello`)}</div>
-  )
+  );
 }
 
-export default App
+export default App;
