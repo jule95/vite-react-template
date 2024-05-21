@@ -8,16 +8,16 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: { en, de },
+    detection: {
+      caches: [`cookie`],
+      lookupCookie: `lng`,
+      order: [`cookie`],
+    },
     fallbackLng: `en`,
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      caches: [`cookie`],
-      order: [`cookie`],
-      lookupCookie: `lng`,
-    },
+    resources: { de, en },
   });
 
 export default i18n;

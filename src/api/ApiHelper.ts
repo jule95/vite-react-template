@@ -15,16 +15,16 @@ class ApiHelper {
 
     if (error instanceof Error) {
       return {
+        code: -1,
         message: error.message,
         name: error.name,
-        code: -1,
       };
     }
 
     return {
-      name: `Unknown Error`,
-      message: `An unknown error occurred!`,
       code: -1,
+      message: `An unknown error occurred!`,
+      name: `Unknown Error`,
     };
   }
 }

@@ -40,10 +40,10 @@ export enum EUserHookReferer {
 function useUsers(): TUserHook {
   const apiService = new ApiService();
   const [state, setState] = useState<IUsersHookState>({
-    loading: false,
-    response: null,
     error: null,
+    loading: false,
     referer: null,
+    response: null,
   });
 
   const resetState = () => {
@@ -120,10 +120,10 @@ function useUsers(): TUserHook {
   };
 
   return [{
-    getUsers,
     createUser,
-    updateUser,
     deleteUser,
+    getUsers,
+    updateUser,
   }, state];
 }
 

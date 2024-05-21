@@ -8,7 +8,7 @@ const AppState:FC<{ children: ReactElement}> = props => {
   const [state, dispatch] = useReducer(appReducer, initState);
 
   const setMessage = (payload: string) => {
-    dispatch({ type: EMessageActions.SET_MESSAGE, payload });
+    dispatch({ payload, type: EMessageActions.SET_MESSAGE });
   };
 
   const actions: IAppActions = {

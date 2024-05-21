@@ -9,10 +9,10 @@ class ApiService {
       headers: {
         'Content-Type': `application/json`,
       },
-      validateStatus: status => status >= 200 && status < 300,
       // ToDO Issue#1: Why is this needed?
-      transformResponse: data => JSON.parse(data),
       transformRequest: data => JSON.stringify(data),
+      transformResponse: data => JSON.parse(data),
+      validateStatus: status => status >= 200 && status < 300,
       ...config,
     });
   }
