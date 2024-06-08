@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="App__navbar">
-        <Link to={config.routes.home}>{t(`page1`)}</Link>
+        <Link to={config.routes.home}>{t(`home`)}</Link>
         <Link to={config.routes.page2}>{t(`page2`)}</Link>
       </div>
       <Outlet />
