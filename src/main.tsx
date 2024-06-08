@@ -6,7 +6,7 @@ import AppState from './state/AppState.tsx';
 import './i18n.ts';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home/Home.tsx';
-import Page2 from './pages/Page2/Page2.tsx';
+import Page1 from './pages/page1/Page1.tsx';
 import NotFound from './pages/NotFound/NotFound.tsx';
 import config from './config.ts';
 
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
       element: <Home />,
       path: config.routes.home,
     }, {
-      element: <Page2 />,
-      path: config.routes.page2,
+      element: <Page1 />,
+      path: config.routes.page1,
     }],
     element: <App />,
     errorElement: <NotFound />,
