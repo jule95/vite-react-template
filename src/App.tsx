@@ -1,21 +1,18 @@
 import './App.scss';
-import { useTranslation } from 'react-i18next';
-import { Link, Outlet } from 'react-router-dom';
-import config from './config.ts';
+import { Outlet } from 'react-router-dom';
 import './App.scss';
+import Navbar from './components/Navbar.tsx';
+import { Container } from '@mui/material';
+import Toolbar from '@mui/material/Toolbar';
 
-const App = () => {
-  const { t } = useTranslation();
-
-  return (
-    <div className="App">
-      <div className="App__navbar">
-        <Link to={config.routes.home}>{t(`home`)}</Link>
-        <Link to={config.routes.page1}>{t(`page1`)}</Link>
-      </div>
+const App = () => (
+  <div className="App">
+    <Navbar />
+    <Toolbar />
+    <Container>
       <Outlet />
-    </div>
-  );
-};
+    </Container>
+  </div>
+);
 
 export default App;
