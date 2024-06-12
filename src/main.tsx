@@ -5,8 +5,8 @@ import './index.scss';
 import AppState from './state/AppState.tsx';
 import './i18n.ts';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Page1 from './pages/Page1/Page1.tsx';
-import Page2 from './pages/Page2/Page2.tsx';
+import Home from './pages/Home/Home.tsx';
+import Page1 from './pages/page1/Page1.tsx';
 import NotFound from './pages/NotFound/NotFound.tsx';
 import config from './config.ts';
 
@@ -14,11 +14,11 @@ import config from './config.ts';
 const router = createBrowserRouter([
   {
     children: [{
-      element: <Page1 />,
+      element: <Home />,
       path: config.routes.home,
     }, {
-      element: <Page2 />,
-      path: config.routes.page2,
+      element: <Page1 />,
+      path: config.routes.page1,
     }],
     element: <App />,
     errorElement: <NotFound />,

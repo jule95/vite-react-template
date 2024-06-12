@@ -4,7 +4,7 @@ const config = {
   },
   routes: {
     home: `/`,
-    page2: `/page2`,
+    page1: `/page1`,
   },
 };
 
