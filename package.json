@@ -27,6 +27,7 @@
     "react-router-dom": "^6.30.0"
   },
   "devDependencies": {
+    "@jule95/eslint-config-jule95": "^1.0.7",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.6",
     "@vitejs/plugin-react": "^4.4.0",
